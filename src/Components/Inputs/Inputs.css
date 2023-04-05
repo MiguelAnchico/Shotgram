@@ -1,0 +1,33 @@
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs_container {
+    position: relative;
+    width: 100%;
+}
+
+.inputs_container input {
+    width: 95%;
+    height: 48px;
+
+    margin: auto;
+    padding: 0px 22px;
+
+    background: rgba(50, 52, 56, 0.1);
+    border-radius: 8px;
+    border: none;
+}
+
+.inputs_container img {
+    position: absolute;
+    top: 8px;
+    right: 28px;
+
+    width: 32px;
+    height: 32px;
+
+    opacity: 0.4;
+    transition: all 250ms;
+}
