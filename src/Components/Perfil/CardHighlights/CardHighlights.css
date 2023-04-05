@@ -1,0 +1,20 @@
+.CardHighlights {
+	height: 135px;
+	display: grid;
+	overflow-x: scroll;
+	gap: 1.5em;
+    margin-left: 16px;
+
+}
+
+.CardHighlights .CardHighlights-historys {
+	width: 100px;
+	height: 100px;
+}
+
+.CardHighlights .CardHighlights-historys img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 100%;
+}

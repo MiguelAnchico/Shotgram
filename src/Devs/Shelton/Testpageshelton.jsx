@@ -1,5 +1,8 @@
 import React from 'react';
+import { Perfil } from '../../Pages/Perfil/Perfil';
 
 export const Testpageshelton = () => {
-	return <div>Testpageshelton</div>;
+	return <div>
+		<Perfil />
+	</div>;
 };
