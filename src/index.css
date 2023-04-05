@@ -5,12 +5,36 @@
   -moz-box-sizing: border-box;
 }
 
-.title-sm {
+@font-face {
+	font-family: apex;
+	font-weight: 650;
+	src: url(./Components/assets/fonts/ApexNew-Heavy.ttf);
+}
 
+@font-face {
+	font-family: salvatore;
+	font-weight: 650;
+	src: url(./Components/assets/fonts/Fontspring-DEMO-salvatore-light.otf);
+}
+
+.title-sm {
+	font-size: 18px;
+	font-family: 'apex', Arial;
 }
 .title-md {
-
+  font-size: 24px;
+	font-family: 'apex', Arial;
 }
 .title-lg {
+  font-size: 32px;
+	font-family: 'apex', Arial;
+}
 
+.body-sm {
+	font-size: 16px;
+	font-family: 'salvatore', Arial;
+}
+.body-md {
+  font-size: 20px;
+	font-family: 'salvatore', Arial;
 }

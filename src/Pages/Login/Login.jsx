@@ -19,7 +19,7 @@ export const Login = () => {
 		<div className='login'>
 			<div className='login-imagen'>
 				<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Adidas_Logo.svg/1000px-Adidas_Logo.svg.png' />
-				<h2></h2>
+				<h2 className='title-lg'>Iniciar Sesión</h2>
 				<p></p>
 			</div>
 			<form className='login-form' onSubmit={handleSubmit(onSubmit)}>
