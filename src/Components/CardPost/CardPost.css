@@ -28,6 +28,11 @@
    justify-self: start;
 }
 
+.CardPost .CardPost-header .CardPost-header_profile-details h2{
+	color : #50003E;
+}
+
+
 .CardPost .CardPost-header .CardPost-header_menu {
    display: flex;
    justify-self: center;
@@ -67,4 +72,9 @@
 .CardPost .interaccion-counter{
    display: flex;
    gap: 15px;
+}
+
+.CardPost .CardPost-comments p{
+   
+   font-size: 12px;
 }

@@ -9,9 +9,9 @@ export const CardPost = () => {
 					alt='Imagen de perfil'
 					className='CardPost-header_profile'
 				/>
-				<div>
-					<h2>Camila.Martinez</h2>
-					<span>Hace 1 hora</span>
+				<div className='CardPost-header_profile-details'>
+					<h2 className='title-sm'>Camila.Martinez</h2>
+					<span class='color-black-op4 body-sm'>Hace 1 hora</span>
 				</div>
 				<img
 					src='src\Components\assets\images\menu-hamburguesa.png'
@@ -33,14 +33,14 @@ export const CardPost = () => {
 					</div>
 					<img src='src\Components\assets\images\estrella-border.png' alt='' />
 				</div>
-				<div className='interaccion-counter'>
+				<div className='interaccion-counter color-black-op4 body-sm'>
 					
-						<span>34 Me gusta</span>
+						<span>36 Me gusta</span>
 						<span>102 Me gusta</span>
 					
 				</div>
 			</div>
-			<div className='CardPost-comments'>
+			<div className='CardPost-comments body-sm'>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore saepe facere debitis temporibus ut. </p>
          </div>
 		</div>
