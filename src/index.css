@@ -17,6 +17,10 @@
 	src: url(./Components/assets/fonts/Fontspring-DEMO-salvatore-light.otf);
 }
 
+body {
+  background-color: #F5F3F5;
+}
+
 .title-sm {
 	font-size: 18px;
 	font-family: 'apex', Arial;
@@ -37,4 +41,36 @@
 .body-md {
   font-size: 20px;
 	font-family: 'salvatore', Arial;
+}
+
+.color-logo {
+  color: #50003E;
+}
+
+.color-logo-light {
+  color: #8d006c;
+}
+
+.color-black {
+  color: #333539;
+}
+
+.color-black-op4 {
+  color: #33353946;
+}
+
+a {
+  text-decoration: none;
+  color: #8d006c;
+}
+
+button {
+  width: 100%;
+  padding: 21px 0px;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: #50003E;
+  color: white;
 }

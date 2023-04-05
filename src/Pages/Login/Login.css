@@ -1,10 +1,46 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 16px;
+
+    width: 300px;
+    height: auto;
+    margin: auto;
+}
+
+.login .login-imagen  {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
 .login .login-imagen img{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
 
     object-fit: contain;
 }
 
 .login form {
-    width: 300px;
+    display: flex;
+    flex-direction: column;
+
+    gap:16px;
+    width: 100%;
+}
+
+.login form a {
+    text-align: right;
+}
+
+.login h2 {
+    color: #333539;
+}
+
+.login .login-register {
+    display: flex;
+    gap: 8px;
 }

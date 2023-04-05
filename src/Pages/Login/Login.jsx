@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form';
 import { Inputs } from '../../Components/Inputs/Inputs';
 
 import userIcon from '../../Components/assets/images/user.png';
+import logo from '../../Components/assets/images/logo.png';
 
 export const Login = () => {
 	const {
@@ -18,9 +19,9 @@ export const Login = () => {
 	return (
 		<div className='login'>
 			<div className='login-imagen'>
-				<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Adidas_Logo.svg/1000px-Adidas_Logo.svg.png' />
+				<img src={logo} />
 				<h2 className='title-lg'>Iniciar Sesión</h2>
-				<p></p>
+				<p className='body-sm'>Nos alegra volver a verte</p>
 			</div>
 			<form className='login-form' onSubmit={handleSubmit(onSubmit)}>
 				<Inputs
@@ -41,12 +42,17 @@ export const Login = () => {
 					required={true}
 					minlength={5}
 				/>
-				<a href=''></a>
-				<button></button>
+				<a href='' className='body-sm'>
+					¿Olvidaste la contraseña?
+				</a>
+				<button className='title-sm'>Iniciar</button>
 			</form>
-			<div>
-				<p></p>
-				<a href=''></a>
+			<div className='login-register'>
+				<p className='body-sm'>¿No tienes una cuenta?</p>
+				<a href='' className='body-sm'>
+					{' '}
+					Registrate
+				</a>
 			</div>
 		</div>
 	);

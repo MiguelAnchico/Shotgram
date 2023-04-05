@@ -22,6 +22,7 @@ export const InputPassword = ({
 					autocomplete
 					type={show ? 'password' : 'text'}
 					placeholder={label}
+					className='body-sm'
 				/>
 				<img
 					src={show ? eyeIcon : closeEyeIcon}
@@ -29,10 +30,12 @@ export const InputPassword = ({
 				/>
 			</div>
 			{errors[name]?.type === 'required' && (
-				<span>El campo es obligatorio</span>
+				<span className='body-sm'>El campo es obligatorio</span>
 			)}
 			{errors[name]?.type === 'minLength' && (
-				<span>El campo debe tener como minimo {minlength} de caracteres</span>
+				<span className='body-sm'>
+					El campo debe tener como minimo {minlength} de caracteres
+				</span>
 			)}
 		</div>
 	);
