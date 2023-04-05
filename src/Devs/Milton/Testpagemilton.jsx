@@ -1,5 +1,8 @@
-import React from 'react';
-
+import { CardPost } from "../../Components/CardPost/CardPost";
 export const Testpagemilton = () => {
-	return <div>testpage</div>;
+	return (
+		<div>
+			<CardPost />
+		</div>
+	);
 };
