@@ -1,4 +1,5 @@
-import './InfoProfile.css'
+import './InfoProfile.css';
+import '../../../index.css';
 
 export const InfoProfile = () => {
 	return (
@@ -8,10 +9,12 @@ export const InfoProfile = () => {
 			</div>
 			<div className='InfoProfile-info'>
 				<div className='InfoProfile-info_names'>
-					<h3>Emma Ruiz</h3>
-					<p>Emmita</p>
+					<h3 className='title-md color-logo'>Emma Ruiz</h3>
+					<p className='boby-sm color-black-op4' id='gris'>
+						Emmita
+					</p>
 				</div>
-				<p className='InfoProfile-info_description'>
+				<p className='InfoProfile-info_description boddy-sm color-black'>
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum
 					distinctio illum libero saepe! Recusandae, alias nostrum eius,
 					consequatur ut fuga magnam facilis non cumque, inventore nisi quasi
@@ -19,22 +22,22 @@ export const InfoProfile = () => {
 				</p>
 				<div className='InfoProfile-info_stats'>
 					<div>
-						<h3>12000</h3>
-						<p>Seguidores</p>
+						<h3 className='tittle-sm color-logo'>12000</h3>
+						<p className='body-sm color-black-op4'>Seguidores</p>
 					</div>
 					<div>
-						<h3>5000</h3>
-						<p>Seguidos</p>
+						<h3 className='tittle-sm color-logo'>5000</h3>
+						<p className='body-sm color-black-op4'>Seguidos</p>
 					</div>
 					<div>
-						<h3>20</h3>
-						<p>Post</p>
+						<h3 className='tittle-sm color-logo'>20</h3>
+						<p className='body-sm color-black-op4'>Post</p>
 					</div>
 				</div>
 			</div>
 			<div className='InfoProfile-Button'>
-				<button>Compatir</button>
-				<button>Editar</button>
+				<button className='title-md rosa'>Compatir</button>
+				<button className='title-md'>Editar</button>
 			</div>
 		</div>
 	);
