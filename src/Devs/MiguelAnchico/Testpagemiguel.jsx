@@ -1,5 +1,10 @@
 import React from 'react';
+import { Login } from '../../Pages/Login/Login';
 
 export const Testpagemiguel = () => {
-	return <div>122223</div>;
+	return (
+		<div>
+			<Login />
+		</div>
+	);
 };
