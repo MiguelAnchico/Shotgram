@@ -4,3 +4,7 @@
 
     object-fit: contain;
 }
+
+.login form {
+    width: 300px;
+}
