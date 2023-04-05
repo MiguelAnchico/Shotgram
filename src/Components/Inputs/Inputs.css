@@ -3,14 +3,14 @@
     flex-direction: column;
 }
 
-.inputs_container {
+.inputs .inputs_container {
     position: relative;
     width: 100%;
 }
 
-.inputs_container input {
-    width: 95%;
-    height: 48px;
+.inputs .inputs_container input {
+    width: 100%;
+    height: 56px;
 
     margin: auto;
     padding: 0px 22px;
@@ -20,10 +20,14 @@
     border: none;
 }
 
-.inputs_container img {
+.inputs span {
+    color: red;
+}
+
+.inputs .inputs_container img {
     position: absolute;
-    top: 8px;
-    right: 28px;
+    top: 12px;
+    right: 18px;
 
     width: 32px;
     height: 32px;

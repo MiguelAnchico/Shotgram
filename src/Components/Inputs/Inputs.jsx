@@ -27,23 +27,28 @@ export const Inputs = ({
 					autocomplete
 					type={type}
 					placeholder={label}
+					className='body-sm'
 				/>
 				<img src={icon} />
 			</div>
 			{errors[name]?.type === 'required' && (
-				<span>El campo es obligatorio</span>
+				<span className='body-sm'>El campo es obligatorio</span>
 			)}
 			{errors[name]?.type === 'minLength' && (
-				<span>El campo debe tener como minimo {minlength} de caracteres</span>
+				<span className='body-sm'>
+					El campo debe tener como minimo {minlength} de caracteres
+				</span>
 			)}
 			{errors[name]?.type === 'maxLength' && (
-				<span>El campo debe tener como maximo {maxlength} de caracteres</span>
+				<span className='body-sm'>
+					El campo debe tener como maximo {maxlength} de caracteres
+				</span>
 			)}
 			{errors[name]?.type === 'min' && (
-				<span>El valor debe ser mayor o igual a {min}</span>
+				<span className='body-sm'>El valor debe ser mayor o igual a {min}</span>
 			)}
 			{errors[name]?.type === 'max' && (
-				<span>El valor debe ser mayor o igual a {max}</span>
+				<span className='body-sm'>El valor debe ser mayor o igual a {max}</span>
 			)}
 		</div>
 	);
