@@ -7,13 +7,14 @@ export const Testpagemiguel = () => {
 	const { users } = useSelector((state) => state.users);
 	const dispatch = useDispatch();
 
-	const ejecutarPrueba = () => {
+	useEffect(() => {
 		dispatch(getUsers());
-	};
+	}, []);
 
 	return (
 		<div className='Testpagemiguel'>
 			<Login />
+
 			<button onClick={ejecutarPrueba}>Prueba</button>
 		</div>
 	);
