@@ -15,7 +15,9 @@ const highlights = [
 export const CardHighlights = () => {
 	return (
 		<div
-			className='CardHighlights'
+			className={
+				highlights.length > 3 ? 'CardHighlights scrollx' : 'CardHighlights'
+			}
 			style={{
 				gridTemplateColumns: 'repeat(' + highlights.length + ', 100px)',
 			}}

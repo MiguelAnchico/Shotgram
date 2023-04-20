@@ -8,17 +8,21 @@
 @font-face {
 	font-family: apex;
 	font-weight: 650;
-	src: url(./Components/assets/fonts/ApexNew-Heavy.ttf);
+	src: url(./assets/fonts/ApexNew-Heavy.ttf);
 }
 
 @font-face {
 	font-family: salvatore;
 	font-weight: 650;
-	src: url(./Components/assets/fonts/Fontspring-DEMO-salvatore-light.otf);
+	src: url(./assets/fonts/Fontspring-DEMO-salvatore-light.otf);
 }
 
 body {
   background-color: #F5F3F5;
+}
+
+#root {
+  height: 100vh;
 }
 
 .title-sm {
@@ -73,4 +77,5 @@ button {
 
   background-color: #50003E;
   color: white;
+  cursor: pointer;
 }

@@ -10,11 +10,17 @@ import { Toaster } from 'react-hot-toast';
 import { Testpagemiguel } from './Devs/MiguelAnchico/Testpagemiguel';
 import { Testpagemilton } from './Devs/Milton/Testpagemilton';
 import { Testpageshelton } from './Devs/Shelton/Testpageshelton';
+import { Login } from './Pages/Login/Login';
+import { Register } from './Pages/Register/Register';
+import { Update } from './Pages/Update/Update';
+import { Perfil } from './Pages/Perfil/Perfil';
+import { store } from './store/store';
+import { Provider } from 'react-redux';
 
 const queryClient = new QueryClient();
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-	<React.StrictMode>
+	<Provider store={store}>
 		<QueryClientProvider client={queryClient}>
 			<Toaster />
 			<BrowserRouter>
@@ -22,9 +28,13 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 					<Route path='/miguel' element={<Testpagemiguel />} />
 					<Route path='/milton' element={<Testpagemilton />} />
 					<Route path='/shelton' element={<Testpageshelton />} />
+					<Route path='/login' element={<Login />} />
+					<Route path='/register' element={<Register />} />
+					<Route path='/update' element={<Update />} />
+					<Route path='/profile' element={<Perfil />} />
 				</Routes>
 			</BrowserRouter>
 			<ReactQueryDevtools />
 		</QueryClientProvider>
-	</React.StrictMode>
+	</Provider>
 );

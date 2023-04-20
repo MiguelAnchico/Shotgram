@@ -16,20 +16,38 @@ export const Inputs = ({
 	return (
 		<div className='inputs'>
 			<div className='inputs_container'>
-				<input
-					{...register(name, {
-						required: required,
-						minLength: minlength,
-						maxLength: maxlength,
-						min,
-						max,
-					})}
-					autocomplete
-					type={type}
-					placeholder={label}
-					className='body-sm'
-				/>
-				<img src={icon} />
+				{icon ? (
+					<>
+						<input
+							{...register(name, {
+								required: required,
+								minLength: minlength,
+								maxLength: maxlength,
+								min,
+								max,
+							})}
+							autocomplete
+							type={type}
+							placeholder={label}
+							className='body-sm'
+						/>
+						<img src={icon} />
+					</>
+				) : (
+					<input
+						{...register(name, {
+							required: required,
+							minLength: minlength,
+							maxLength: maxlength,
+							min,
+							max,
+						})}
+						autocomplete
+						type={type}
+						placeholder={label}
+						className='body-sm'
+					/>
+				)}
 			</div>
 			{errors[name]?.type === 'required' && (
 				<span className='body-sm'>El campo es obligatorio</span>

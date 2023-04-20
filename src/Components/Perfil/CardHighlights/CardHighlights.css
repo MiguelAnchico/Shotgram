@@ -1,15 +1,19 @@
 .CardHighlights {
-	height: 135px;
+	height: 145px;
 	display: grid;
-	overflow-x: scroll;
+
 	gap: 1.5em;
     margin-left: 16px;
+}
 
+.scrollx {
+	overflow-x: scroll;
 }
 
 .CardHighlights .CardHighlights-historys {
 	width: 100px;
 	height: 100px;
+	text-align: center;
 }
 
 .CardHighlights .CardHighlights-historys img {
