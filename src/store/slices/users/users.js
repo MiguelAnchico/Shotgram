@@ -4,13 +4,18 @@ export const usersSlice = createSlice({
 	name: 'users',
 	initialState: {
 		users: [],
+		user: {},
 	},
 	reducers: {
-		increment: (state /* action */) => {
-			state.counter += 1;
+		setUsers: (state, action) => {
+			state.users = action.payload;
+		},
+
+		setUser: (state, action) => {
+			state.user = action.payload;
 		},
 	},
 });
 
 // Action creators are generated for each case reducer function
-export const { increment } = usersSlice.actions;
+export const { setUsers, setUser } = usersSlice.actions;
