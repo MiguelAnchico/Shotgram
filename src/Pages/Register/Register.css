@@ -1,6 +1,50 @@
-.Register .Register-imagen img{
-    width: 200px;
-    height: 200px;
+.register {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register .register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 16px;
+
+    width: 300px;
+    height: auto;
+}
+
+.register .register-container .register-container-imagen  {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.register .register-container .register-container-imagen img{
+    width: 150px;
+    height: 150px;
 
     object-fit: contain;
+}
+
+.register .register-container form {
+    display: flex;
+    flex-direction: column;
+
+    gap:16px;
+    width: 100%;
+}
+
+.register .register-container form a {
+    text-align: right;
+}
+
+.register .register-container .register-container-login {
+    display: flex;
+    gap: 8px;
 }

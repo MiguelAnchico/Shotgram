@@ -1,7 +1,7 @@
 import './InfoProfile.css';
 import '../../../index.css';
 
-export const InfoProfile = () => {
+export const InfoProfile = ({}) => {
 	return (
 		<div className='InfoProfile'>
 			<div className='InfoProfile-image'>
@@ -10,11 +10,11 @@ export const InfoProfile = () => {
 			<div className='InfoProfile-info'>
 				<div className='InfoProfile-info_names'>
 					<h3 className='title-md color-logo'>Emma Ruiz</h3>
-					<p className='boby-sm color-black-op4' id='gris'>
+					<p className='body-sm color-black-op4' id='gris'>
 						Emmita
 					</p>
 				</div>
-				<p className='InfoProfile-info_description boddy-sm color-black'>
+				<p className='InfoProfile-info_description body-sm color-black'>
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum
 					distinctio illum libero saepe! Recusandae, alias nostrum eius,
 					consequatur ut fuga magnam facilis non cumque, inventore nisi quasi
@@ -22,15 +22,15 @@ export const InfoProfile = () => {
 				</p>
 				<div className='InfoProfile-info_stats'>
 					<div>
-						<h3 className='tittle-sm color-logo'>12000</h3>
+						<h3 className='title-sm color-logo'>12000</h3>
 						<p className='body-sm color-black-op4'>Seguidores</p>
 					</div>
 					<div>
-						<h3 className='tittle-sm color-logo'>5000</h3>
+						<h3 className='title-sm color-logo'>5000</h3>
 						<p className='body-sm color-black-op4'>Seguidos</p>
 					</div>
 					<div>
-						<h3 className='tittle-sm color-logo'>20</h3>
+						<h3 className='title-sm color-logo'>20</h3>
 						<p className='body-sm color-black-op4'>Post</p>
 					</div>
 				</div>

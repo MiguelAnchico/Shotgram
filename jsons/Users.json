@@ -1,0 +1,98 @@
+[
+    {
+        "idUsuario" : "00000001",
+        "nombre": "Juan Carlos De Fuca",
+        "password": "1234567890",
+        "correo": "juancarlos19@gmail.com",
+        "usuario": "juan.carlos",
+        "descripcion": "Soy un entusiasta de la fotografía, me gusta tomar fotos en la calle y grabar videos del mar",
+        "seguidores" : [ "Chun.li", "Kali:)" , "vss.rios", "oliver" , "loca.memes" ],
+        "seguidos" : ["Chun.li", "Kali:)"],
+        "imagen" : "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+        "configuraciones": {
+            "privado": false,
+            "contenidoAdulto": false
+        },
+        "bloqueados" : []
+    },
+    {
+        "idUsuario" : "00000002",
+        "nombre": "Chun Li Xiolaong",
+        "password": "Passwold",
+        "correo": "chunli@gmail.com",
+        "usuario": "Chun.li",
+        "descripcion": "Me gusta la cocina, hace 10 años que trabajo como chef en el restaurante de mi familia, y me gustaria poder viajar por todo el mundo",
+        "seguidores" : ["juan.carlos", "Kali:)"],
+        "seguidos" : 2,
+        "imagen" : "https://images.unsplash.com/photo-1475823678248-624fc6f85785?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "configuraciones": {
+            "privado": false,
+            "contenidoAdulto": false
+        },
+        "bloqueados" : []
+    },
+    {
+        "idUsuario" : "00000003",
+        "nombre": "Kali Marin Dazon",
+        "password": "1234Jack",
+        "correo": "kalimarin@gmail.com",
+        "usuario": "Kali:)",
+        "descripcion": "No necesito hablar, solo actuar",
+        "seguidores" : ["Chun.li", "juan.carlos" , "vss.rios", "oliver" , "loca.memes"],
+        "seguidos" : 5,
+        "imagen" : "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        "configuraciones": {
+            "privado": false,
+            "contenidoAdulto": false
+        },
+        "bloqueados" : []
+    },
+    {
+        "idUsuario" : "00000004",
+        "nombre": "Vanessa Rios La Piedra",
+        "password": "1234567890",
+        "correo": "vanessarios@gmail.com",
+        "usuario": "vss.rios",
+        "descripcion": "Soy una programadora en vista de mi pasión por la tecnología y como ingeniera comprometida con la honestidad, la calidad y la prestación de un excelente servicio en el área del mantenimiento, me gustaría formar parte de una empresa en la cual puedo crecer profesionalmente",
+        "seguidores" : 3,
+        "seguidos" : 3,
+        "imagen" : "https://images.unsplash.com/photo-1528228728175-149802236c04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        "configuraciones": {
+            "privado": false,
+            "contenidoAdulto": false
+        },
+        "bloqueados" : []
+    },
+    {
+        "idUsuario" : "00000005",
+        "nombre": "Oliver Quiñonez",
+        "password": "MisCancionesSecretas",
+        "correo": "aliver69@gmail.com",
+        "usuario": "oliver",
+        "descripcion": "Nuevo canción a fin de año, atentos a los posts",
+        "seguidores" : 2,
+        "seguidos" : 3,
+        "imagen" : "https://images.unsplash.com/photo-1600574691453-499962cc0611?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        "configuraciones": {
+            "privado": false,
+            "contenidoAdulto": false
+        },
+        "bloqueados" : []
+    },
+    {
+        "idUsuario" : "00000006",
+        "nombre": "La loca de los memes",
+        "password": "Memerio1234",
+        "correo": "memes90@gmail.com",
+        "usuario": "loca.memes",
+        "descripcion": "Memes por doquier",
+        "seguidores" : 3,
+        "seguidos" : 2,
+        "imagen" : "https://images.unsplash.com/photo-1565799284935-da1e43e7944e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "configuraciones": {
+            "privado": false,
+            "contenidoAdulto": false
+        },
+        "bloqueados" : []
+    }
+]
