@@ -1,4 +1,5 @@
 import posts from '../../../../jsons/Publicaciones.json';
+import users from '../../../../jsons/Users.json';
 import { setPost, setPosts } from './post';
 
 export const getAllPosts = () => {
@@ -10,7 +11,9 @@ export const getAllPosts = () => {
 
 		// Linea a eliminar una vez se conecte con el backend
 		const data = posts;
+		const dataUsers = users;
 
+		data?.map((post, index) => {});
 		dispatch(setPosts(data));
 	};
 };
