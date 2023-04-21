@@ -22,7 +22,7 @@ export const getUser = (user) => {
 		//);
 
 		// Lineas a eliminar una vez se conecte con el backend
-		const data = users.filter((account) => account.usuario == user);
+		const data = users.filter((account) => account.idUsuario == user);
 
 		if (data.length > 0) dispatch(setUser(data[0]));
 	};

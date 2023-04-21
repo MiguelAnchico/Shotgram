@@ -13,8 +13,10 @@ export const Testpagemiguel = () => {
 	}, []);
 
 	const ejecutarPrueba = () => {
-		dispatch(getUser('Chun.li'));
+		dispatch(getUser('00000002'));
 	};
+
+	console.log(new Date().toISOString());
 
 	return (
 		<div className='Testpagemiguel'>
