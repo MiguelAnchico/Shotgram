@@ -3,14 +3,19 @@ import { createSlice } from '@reduxjs/toolkit';
 export const postSlice = createSlice({
 	name: 'post',
 	initialState: {
-		counter: 10,
+		posts: [],
+		post: {},
 	},
 	reducers: {
-		increment: (state /* action */) => {
-			state.counter += 1;
+		setPosts: (state, action) => {
+			state.posts = action.payload;
+		},
+
+		setPost: (state, action) => {
+			state.post = action.payload;
 		},
 	},
 });
 
 // Action creators are generated for each case reducer function
-export const { increment } = postSlice.actions;
+export const { setPosts, setPost } = postSlice.actions;
