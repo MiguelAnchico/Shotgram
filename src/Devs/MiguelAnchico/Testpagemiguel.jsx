@@ -4,6 +4,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getUser, getUsers } from '../../store/slices/users/thunks';
 import { useEffect } from 'react';
 import { getAllPosts } from '../../store/slices/post/thunks';
+import { DateFormatter } from '../../utils/DateFormatter';
+import { SectionPosts } from '../../Components/Home/SectionPosts';
 
 export const Testpagemiguel = () => {
 	const { posts } = useSelector((state) => state.posts);
@@ -15,15 +17,13 @@ export const Testpagemiguel = () => {
 	}, []);
 
 	const ejecutarPrueba = () => {
-		dispatch(getUser('00000002'));
+		console.log(DateFormatter(posts[0]?.fechaPublicacion));
 	};
 
 	return (
 		<div className='Testpagemiguel'>
 			<Login />
-			{posts?.map((post) => (
-				<img src={post.imagen} />
-			))}
+			<SectionPosts />
 
 			<button onClick={ejecutarPrueba}>Prueba</button>
 		</div>

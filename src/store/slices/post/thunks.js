@@ -13,8 +13,29 @@ export const getAllPosts = () => {
 		const data = posts;
 		const dataUsers = users;
 
-		data?.map((post, index) => {});
-		dispatch(setPosts(data));
+		const finalData = [];
+
+		data?.map((post, index) => {
+			let finalPost = {};
+			const imagenUsuario = dataUsers.filter(
+				(user) => user.idUsuario == post.idCreador
+			)[0]['imagen'];
+			console.log(imagenUsuario);
+			finalPost = {
+				idPublicacion: post.idPublicacion,
+				fechaPublicacion: post.fechaPublicacion,
+				idCreador: post.idCreador,
+				nombreCreador: post.nombreCreador,
+				numeroMeGustas: post.numeroMeGustas,
+				numeroComentarios: post.numeroComentarios,
+				descripcion: post.descripcion,
+				imagen: post.imagen,
+				imagenUsuario: imagenUsuario,
+			};
+
+			finalData.push(finalPost);
+		});
+		dispatch(setPosts(finalData));
 	};
 };
 export const getPosts = (idUser) => {
