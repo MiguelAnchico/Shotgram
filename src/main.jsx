@@ -16,6 +16,7 @@ import { Update } from './Pages/Update/Update';
 import { Perfil } from './Pages/Perfil/Perfil';
 import { store } from './store/store';
 import { Provider } from 'react-redux';
+import { Home } from './Pages/Home/Home';
 
 const queryClient = new QueryClient();
 
@@ -32,6 +33,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 					<Route path='/register' element={<Register />} />
 					<Route path='/update' element={<Update />} />
 					<Route path='/profile' element={<Perfil />} />
+					<Route path='/home' element={<Home />} />
 				</Routes>
 			</BrowserRouter>
 			<ReactQueryDevtools />

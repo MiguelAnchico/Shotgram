@@ -1,7 +1,15 @@
 import './InfoProfile.css';
 import '../../../index.css';
 
-export const InfoProfile = ({}) => {
+export const InfoProfile = ({
+	imageUser,
+	name,
+	user,
+	description,
+	follows,
+	followers,
+	posts,
+}) => {
 	return (
 		<div className='InfoProfile'>
 			<div className='InfoProfile-image'>
@@ -35,10 +43,7 @@ export const InfoProfile = ({}) => {
 					</div>
 				</div>
 			</div>
-			<div className='InfoProfile-Button'>
-				<button className='title-md rosa'>Compatir</button>
-				<button className='title-md'>Editar</button>
-			</div>
+			<div className='InfoProfile-Button'>{}</div>
 		</div>
 	);
 };
