@@ -10,5 +10,37 @@
 }
 .ConfiguracionMenu-title{
     font-family: apex;
+
+    color: #50003E;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.input-button {
+	width: 100%;
+	padding: 21px 0px;
+
+	border: none;
+	border-radius: 8px;
+
+	background-color: #e2e0e2;
+	color: #50003e;
+	cursor: pointer;
+
+	font-family: apex;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.input-button-icon{
+    height: 20px;
+}
+
+.input-button-icon-forward{
+    height: 30px;
+}

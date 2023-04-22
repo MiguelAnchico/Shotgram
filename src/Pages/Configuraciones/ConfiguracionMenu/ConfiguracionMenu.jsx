@@ -8,8 +8,15 @@ export const ConfiguracionMenu = () => {
 				<img src='src/assets/images/back-arrow-icon.png' alt='' />
 			</div>
 			<div className='ConfiguracionMenu'>
-				<h2 className='ConfiguracionMenu-title'>Configuracion perfil</h2>
-				<div className='input-button'>Adios</div>
+				<h2 className='ConfiguracionMenu-title'>
+					<span>Configuración</span>
+					<span>perfil</span>
+				</h2>
+				<div className='input-button'>
+					<img src='src/assets/images/user.png' alt='' className='input-button-icon'/>
+					Adios
+					<img src='src/assets/images/fordward-arrow-icon.png' alt='' className='input-button-icon-forward'/>
+				</div>
 				<button className='input-button'>hola</button>
 				<button></button>
 				<button></button>
