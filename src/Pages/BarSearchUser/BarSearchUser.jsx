@@ -8,5 +8,10 @@ export const BarSearchUser = () => {
 		dispatch(getUsers());
 	}, []);
 
-	return <div>BarSearch</div>;
+	return (
+        <>
+        <input type="text"
+        placeholder='Buscador' />
+        </>
+    );
 };

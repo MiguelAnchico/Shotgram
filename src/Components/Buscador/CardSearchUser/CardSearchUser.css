@@ -1,0 +1,9 @@
+.CardSearchUser{
+    display: flex;
+    flex-direction: row;
+}
+
+.CardSearchUser-img{
+    width: 60px;
+    border-radius: 50%;
+}
