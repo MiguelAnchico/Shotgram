@@ -14,13 +14,13 @@ Actividades por realizar:
         d. Users ( CRUD )
     3. Volver generico cada uno de los componentes
     4. Crear paginas:
-        a. Login
-        b. Register
-        c. Update
-        d. Perfil
+        a. Login // Completado
+        b. Register // Completado
+        c. Update // Completado
+        d. Perfil // Dejar listo para las 40
         e. Configuraciones
             I. Editar Perfil
-            II. Editar Perfil
+            II. Editar Cuenta
             III. Logout
         f. Publicaciones
         g. Favoritos

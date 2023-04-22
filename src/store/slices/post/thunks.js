@@ -1,6 +1,6 @@
 import posts from '../../../../jsons/Publicaciones.json';
 import users from '../../../../jsons/Users.json';
-import { setPost, setPosts } from './post';
+import { setPost, setPosts } from './postsSlice';
 
 export const getAllPosts = () => {
 	return async (dispatch, getState) => {

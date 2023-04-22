@@ -37,9 +37,8 @@
 }
 
 .InfoProfile .InfoProfile-info_stats {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
 .InfoProfile .InfoProfile-info_stats div {

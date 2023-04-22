@@ -29,10 +29,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 					<Route path='/miguel' element={<Testpagemiguel />} />
 					<Route path='/milton' element={<Testpagemilton />} />
 					<Route path='/shelton' element={<Testpageshelton />} />
+
 					<Route path='/login' element={<Login />} />
 					<Route path='/register' element={<Register />} />
 					<Route path='/update' element={<Update />} />
-					<Route path='/profile' element={<Perfil />} />
+					<Route path='/profile/:idUser' element={<Perfil />} />
 					<Route path='/home' element={<Home />} />
 				</Routes>
 			</BrowserRouter>

@@ -1,4 +1,4 @@
-.register {
+.update {
     width: 100%;
     height: 100%;
 
@@ -8,45 +8,45 @@
     justify-items: center;
 }
 
-.registerMobile {
+.updateMobile {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.register .register-banner{
+.update .update-banner{
     width: 100%;
     height: 100%;
 
     object-fit: cover;
 }
 
-.register .register-container {
+.update .update-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 
     gap: 16px;
 
-    width: 300px;
+    width: 320px;
     height: auto;
 }
 
-.register .register-container .register-container-imagen  {
+.update .update-container .update-container-imagen  {
     display: flex;
     flex-direction: column;
 
     align-items: center;
 }
 
-.register .register-container .register-container-imagen img{
+.update .update-container .update-container-imagen img{
     width: 150px;
     height: 150px;
 
     object-fit: contain;
 }
 
-.register .register-container form {
+.update .update-container form {
     display: flex;
     flex-direction: column;
 
@@ -54,11 +54,11 @@
     width: 100%;
 }
 
-.register .register-container form a {
+.update .update-container form a {
     text-align: right;
 }
 
-.register .register-container .register-container-login {
+.update .update-container .update-container-register {
     display: flex;
     gap: 8px;
 }

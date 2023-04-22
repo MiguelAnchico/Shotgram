@@ -2,7 +2,7 @@ import { CardSearchUser } from '../../Components/Buscador/CardSearchUser/CardSea
 import { BarSearchUser } from '../BarSearchUser/BarSearchUser';
 import './Buscador.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { setUsers } from '../../store/slices/users/users';
+import { setUsers } from '../../store/slices/users/usersSlice';
 
 export const Buscador = () => {
 	const { users } = useSelector((state) => state.users);

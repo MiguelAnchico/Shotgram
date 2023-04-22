@@ -1,5 +1,6 @@
-import { setUser, setUsers } from './users';
+import { setUser, setUsers } from './usersSlice';
 import users from '../../../../jsons/Users.json';
+import posts from '../../../../jsons/Publicaciones.json';
 
 export const getUsers = () => {
 	return async (dispatch, getState) => {
@@ -22,7 +23,12 @@ export const getUser = (user) => {
 		//);
 
 		// Lineas a eliminar una vez se conecte con el backend
-		const data = users.filter((account) => account.idUsuario == user);
+		let data = users.filter((account) => account.idUsuario == user);
+		const postsUser = posts.filter(
+			(post) => post.idCreador == data[0]['idUsuario']
+		);
+		data = [...data];
+		data[0]['post'] = postsUser;
 
 		if (data.length > 0) dispatch(setUser(data[0]));
 	};

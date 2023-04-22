@@ -6,8 +6,10 @@ import { Inputs } from '../../Components/Inputs/Inputs';
 
 import userIcon from '../../assets/images/user.png';
 import logo from '../../assets/images/logo.png';
+import banner from '../../assets/images/loginBanner.jpg';
 
 import './Login.css';
+import { useScreenSize } from '../../hooks/useScreenSize';
 
 export const Login = () => {
 	const navigate = useNavigate();
@@ -17,10 +19,12 @@ export const Login = () => {
 		formState: { errors },
 	} = useForm();
 
-	const onSubmit = (data) => navigate('/home');
+	const { width } = useScreenSize();
+
+	const onSubmit = () => navigate('/home');
 
 	return (
-		<div className='login'>
+		<div className={width > 900 ? 'login' : 'login loginMobile'}>
 			<div className='login-container'>
 				<div className='login-container-imagen'>
 					<img src={logo} />
@@ -63,6 +67,7 @@ export const Login = () => {
 					</Link>
 				</div>
 			</div>
+			{width > 900 && <img className='login-banner' src={banner} />}
 		</div>
 	);
 };
