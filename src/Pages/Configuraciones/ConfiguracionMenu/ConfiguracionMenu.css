@@ -21,7 +21,7 @@
 
 .input-button {
 	width: 100%;
-	padding: 21px 0px;
+	padding: 15px 30px;
 
 	border: none;
 	border-radius: 8px;
@@ -35,6 +35,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+}
+
+.input-button-container{
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .input-button-icon{
@@ -42,5 +49,6 @@
 }
 
 .input-button-icon-forward{
-    height: 30px;
+    height: 28px;
+    opacity: 0.4;
 }

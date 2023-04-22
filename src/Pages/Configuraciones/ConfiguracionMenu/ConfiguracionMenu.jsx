@@ -13,9 +13,19 @@ export const ConfiguracionMenu = () => {
 					<span>perfil</span>
 				</h2>
 				<div className='input-button'>
-					<img src='src/assets/images/user.png' alt='' className='input-button-icon'/>
-					Adios
-					<img src='src/assets/images/fordward-arrow-icon.png' alt='' className='input-button-icon-forward'/>
+					<div className='input-button-container'>
+						<img
+							src='src/assets/images/user.png'
+							alt=''
+							className='input-button-icon'
+						/>
+						<span>Editar Perfil</span>
+					</div>
+					<img
+						src='src/assets/images/fordward-arrow-icon.png'
+						alt=''
+						className='input-button-icon-forward'
+					/>
 				</div>
 				<button className='input-button'>hola</button>
 				<button></button>
