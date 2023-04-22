@@ -1,0 +1,30 @@
+.Publicacion{
+    width: 85%;
+    background: red;
+}
+
+.Publicacion-img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+.Publicacion-userContainer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Publicacion-userContainer-img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.Publicacion-userContainer-data-user{
+    font-family: apex;
+    font-size: 20px;
+}
+

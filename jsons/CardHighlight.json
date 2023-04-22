@@ -3,18 +3,36 @@
 		"idUsuario": "00000001",
 		"idHighlight": "00000001",
 		"titulo": "Viajes destacados",
-		"imagen": "foto1"
+		"imagen": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=781&q=80"
 	},
 	{
 		"idUsuario": "00000001",
 		"idHighlight": "00000002",
 		"titulo": "Viajes destacados",
-		"imagen": "foto2"
+		"imagen": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
 	},
 	{
-		"idUsuario": "00000001",
+		"idUsuario": "00000002",
 		"idHighlight": "00000003",
 		"titulo": "Viajes destacados",
-		"imagen": "foto3"
+		"imagen": "https://i.ytimg.com/vi/-V9PqHmv-UY/maxresdefault.jpg"
+	},
+    {
+		"idUsuario": "00000002",
+		"idHighlight": "00000004",
+		"titulo": "Viajes destacados",
+		"imagen": "https://d26lpennugtm8s.cloudfront.net/assets/blog_es/01ar-mobile.jpg"
+	},
+    {
+		"idUsuario": "00000003",
+		"idHighlight": "00000005",
+		"titulo": "Viajes destacados",
+		"imagen": "https://images.unsplash.com/photo-1527824219416-62ecc4122e3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+	},
+    {
+		"idUsuario": "00000003",
+		"idHighlight": "00000006",
+		"titulo": "Viajes destacados",
+		"imagen": "https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
 	}
 ]
