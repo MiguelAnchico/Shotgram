@@ -1,0 +1,20 @@
+[
+	{
+		"idUsuario": "00000001",
+		"idHighlight": "00000001",
+		"titulo": "Viajes destacados",
+		"imagen": "foto1"
+	},
+	{
+		"idUsuario": "00000001",
+		"idHighlight": "00000002",
+		"titulo": "Viajes destacados",
+		"imagen": "foto2"
+	},
+	{
+		"idUsuario": "00000001",
+		"idHighlight": "00000003",
+		"titulo": "Viajes destacados",
+		"imagen": "foto3"
+	}
+]
