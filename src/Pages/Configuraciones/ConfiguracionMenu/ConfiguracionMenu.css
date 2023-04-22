@@ -1,0 +1,14 @@
+.back-icon img{
+    opacity: 0.4;
+    height: 35px;
+}
+
+.ConfiguracionMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ConfiguracionMenu-title{
+    font-family: apex;
+}
+
