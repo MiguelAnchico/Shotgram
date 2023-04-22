@@ -1,0 +1,22 @@
+.inputResize {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputResize span {
+    color: red;
+}
+
+.inputResize textarea {
+    width: 100%;
+    min-height: 100px;
+
+    margin: auto;
+    padding: 16px;
+
+    background: rgba(50, 52, 56, 0.1);
+    border-radius: 8px;
+    border: none;
+
+    resize: none;
+}

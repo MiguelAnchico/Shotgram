@@ -1,13 +1,17 @@
 import { useNavigate, Link } from 'react-router-dom';
 
-import { InputPassword } from '../../Components/Inputs/InputPassword/InputPassword';
+import { InputPassword } from '../../Components/Shared/Inputs/InputPassword/InputPassword';
 import { useForm } from 'react-hook-form';
-import { Inputs } from '../../Components/Inputs/Inputs';
+import { Inputs } from '../../Components/Shared/Inputs/Inputs';
 
 import userIcon from '../../assets/images/user.png';
 import logo from '../../assets/images/logo.png';
+import banner from '../../assets/images/loginBanner.jpg';
 
 import './Login.css';
+import { useScreenSize } from '../../hooks/useScreenSize';
+import { useDispatch } from 'react-redux';
+import { login } from '../../store/slices/auth/thunks';
 
 export const Login = () => {
 	const navigate = useNavigate();
@@ -17,10 +21,17 @@ export const Login = () => {
 		formState: { errors },
 	} = useForm();
 
-	const onSubmit = (data) => navigate('/home');
+	const dispatch = useDispatch();
+
+	const { width } = useScreenSize();
+
+	const onSubmit = () => {
+		dispatch(login({ user: 0, password: 0 }));
+		navigate('/home');
+	};
 
 	return (
-		<div className='login'>
+		<div className={width > 900 ? 'login' : 'login loginMobile'}>
 			<div className='login-container'>
 				<div className='login-container-imagen'>
 					<img src={logo} />
@@ -63,6 +74,7 @@ export const Login = () => {
 					</Link>
 				</div>
 			</div>
+			{width > 900 && <img className='login-banner' src={banner} />}
 		</div>
 	);
 };

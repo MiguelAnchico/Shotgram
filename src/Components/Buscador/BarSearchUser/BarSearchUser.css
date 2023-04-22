@@ -1,0 +1,25 @@
+
+.BarSearchUser {
+    position: relative;
+    width: 100%;
+}
+
+.BarSearchUser input {
+    width: 100%;
+    height: 56px;
+
+    margin: auto;
+    padding: 0px 22px;
+
+    background: rgba(50, 52, 56, 0.1);
+    border-radius: 8px;
+    border: none;
+}
+
+.BarSearchUser img {
+    position: absolute;
+    right: 28px;
+    top: 14px;
+
+    width: 28px;
+}

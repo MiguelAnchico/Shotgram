@@ -1,0 +1,11 @@
+.LinkDekstop nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    margin-top: 32px;
+}
+
+.LinkDekstop span{
+    color: red;
+    cursor: pointer;
+}

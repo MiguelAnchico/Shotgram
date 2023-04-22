@@ -1,0 +1,20 @@
+.cuenta form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    padding: 32px;
+    max-width: 500px;
+
+    margin: auto;
+}
+
+.cuenta h3 {
+    text-align: center;
+    margin-left: -20px;
+}
+
+.cuenta .cuenta-retroceder {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+}

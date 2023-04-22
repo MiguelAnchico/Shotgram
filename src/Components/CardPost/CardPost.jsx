@@ -19,7 +19,7 @@ export const CardPost = ({
 				<img src={imageUser} className='CardPost-header_profile' />
 				<div className='CardPost-header_profile-details'>
 					<h2 className='title-sm'>{user}</h2>
-					<span class='color-black-op4 body-sm'>{datePost}</span>
+					<span className='color-black-op4 body-sm'>{datePost}</span>
 				</div>
 				<img src={iconMenu} className='CardPost-header_menu' />
 			</div>

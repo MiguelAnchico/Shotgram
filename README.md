@@ -14,18 +14,18 @@ Actividades por realizar:
         d. Users ( CRUD )
     3. Volver generico cada uno de los componentes
     4. Crear paginas:
-        a. Login
-        b. Register
-        c. Update
-        d. Perfil
+        a. Login // Completado
+        b. Register // Completado
+        c. Update // Completado
+        d. Perfil // Completado - Falta CardHiglighs
         e. Configuraciones
             I. Editar Perfil
-            II. Editar Perfil
+            II. Editar Cuenta
             III. Logout
         f. Publicaciones
         g. Favoritos
         h. Buscador
-        i. Perfil
+        i. Perfil // Completado
         j. Chat
             I. Chat Privado
         k. Publicación

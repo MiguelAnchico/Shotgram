@@ -1,0 +1,25 @@
+.CardUserFollow {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-items: center;
+}
+
+.CardUserFollow > div {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1;
+
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.CardUserFollow > div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
