@@ -12,6 +12,26 @@ export const ConfiguracionMenu = () => {
 					<span>Configuración</span>
 					<span>perfil</span>
 				</h2>
+                
+				{/* Inicio Boton */}
+				<a className='input-button'>
+					<div className='input-button-container'>
+						<img
+							src='src/assets/images/user.png'
+							alt=''
+							className='input-button-icon'
+						/>
+						<span>Editar Perfil</span>
+					</div>
+					<img
+						src='src/assets/images/fordward-arrow-icon.png'
+						alt=''
+						className='input-button-icon-forward'
+					/>
+				</a>
+				{/* Fin Boton */}
+
+
 				<div className='input-button'>
 					<div className='input-button-container'>
 						<img
@@ -27,9 +47,21 @@ export const ConfiguracionMenu = () => {
 						className='input-button-icon-forward'
 					/>
 				</div>
-				<button className='input-button'>hola</button>
-				<button></button>
-				<button></button>
+				<div className='input-button'>
+					<div className='input-button-container'>
+						<img
+							src='src/assets/images/user.png'
+							alt=''
+							className='input-button-icon'
+						/>
+						<span>Editar Perfil</span>
+					</div>
+					<img
+						src='src/assets/images/fordward-arrow-icon.png'
+						alt=''
+						className='input-button-icon-forward'
+					/>
+				</div>
 			</div>
 		</>
 	);
