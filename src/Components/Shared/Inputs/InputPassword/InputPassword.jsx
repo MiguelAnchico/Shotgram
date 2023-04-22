@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-import eyeIcon from '../../../assets/images/eye.png';
-import closeEyeIcon from '../../../assets/images/closed-eyes.png';
+import eyeIcon from '../../../../assets/images/eye.png';
+import closeEyeIcon from '../../../../assets/images/closed-eyes.png';
 
 import './InputPassword.css';
 

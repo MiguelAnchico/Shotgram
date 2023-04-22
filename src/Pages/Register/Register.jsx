@@ -1,8 +1,8 @@
 import { useNavigate, Link } from 'react-router-dom';
 
-import { InputPassword } from '../../Components/Inputs/InputPassword/InputPassword';
+import { InputPassword } from '../../Components/Shared/Inputs/InputPassword/InputPassword';
 import { useForm } from 'react-hook-form';
-import { Inputs } from '../../Components/Inputs/Inputs';
+import { Inputs } from '../../Components/Shared/Inputs/Inputs';
 
 import userIcon from '../../assets/images/user.png';
 import logo from '../../assets/images/logo.png';

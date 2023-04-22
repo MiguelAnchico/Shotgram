@@ -1,15 +1,13 @@
 import { useNavigate, Link } from 'react-router-dom';
 
-import { Inputs } from '../../Components/Inputs/Inputs';
-
 import logo from '../../assets/images/logo.png';
 import { useForm } from 'react-hook-form';
 import banner from '../../assets/images/loginBanner.jpg';
 
 import './Update.css';
 import { useScreenSize } from '../../hooks/useScreenSize';
-import { InputResize } from '../../Components/Inputs/InputResize/InputResize';
-import { InputImage } from '../../Components/Inputs/InputImage/InputImage';
+import { InputResize } from '../../Components/Shared/Inputs/InputResize/InputResize';
+import { InputImage } from '../../Components/Shared/Inputs/InputImage/InputImage';
 import { useSelector } from 'react-redux';
 
 export const Update = () => {

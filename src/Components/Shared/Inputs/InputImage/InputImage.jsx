@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import userDefaults from '../../../assets/images/userDefault.jpg';
+import userDefaults from '../../../../assets/images/userDefault.jpg';
 
 import './InputImage.css';
 
