@@ -1,6 +1,6 @@
 import { useNavigate, Link } from 'react-router-dom';
 
-import logo from '../../assets/images/logo.png';
+import logo from '../../assets/images/Logo.png';
 import { useForm } from 'react-hook-form';
 import banner from '../../assets/images/loginBanner.jpg';
 
