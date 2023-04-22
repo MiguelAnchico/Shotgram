@@ -1,4 +1,8 @@
+import { useSelector } from 'react-redux';
+import { ButtonOtherProfile } from './Buttons/ButtonOtherProfile';
+import { ButtonProfile } from './Buttons/ButtonProfile';
 import './InfoProfile.css';
+import { useScreenSize } from '../../../hooks/useScreenSize';
 
 export const InfoProfile = ({
 	imageUser,
@@ -8,9 +12,16 @@ export const InfoProfile = ({
 	follows,
 	followers,
 	posts,
+	idProfile,
 }) => {
+	const { idUser } = useSelector((state) => state.auth);
+
+	const { width } = useScreenSize();
+
 	return (
-		<div className='InfoProfile'>
+		<div
+			className={width > 900 ? 'InfoProfile InfoProfileMobile' : 'InfoProfile'}
+		>
 			<div className='InfoProfile-image'>
 				<img src={imageUser} />
 			</div>
@@ -39,7 +50,9 @@ export const InfoProfile = ({
 					</div>
 				</div>
 			</div>
-			<div className='InfoProfile-Button'>{}</div>
+			<div className='InfoProfile-Button'>
+				{idProfile == idUser ? <ButtonProfile /> : <ButtonOtherProfile />}
+			</div>
 		</div>
 	);
 };

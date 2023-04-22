@@ -17,7 +17,7 @@ Actividades por realizar:
         a. Login // Completado
         b. Register // Completado
         c. Update // Completado
-        d. Perfil // Dejar listo para las 40
+        d. Perfil // Completado - Falta CardHiglighs
         e. Configuraciones
             I. Editar Perfil
             II. Editar Cuenta
@@ -25,7 +25,7 @@ Actividades por realizar:
         f. Publicaciones
         g. Favoritos
         h. Buscador
-        i. Perfil
+        i. Perfil // Completado
         j. Chat
             I. Chat Privado
         k. Publicación

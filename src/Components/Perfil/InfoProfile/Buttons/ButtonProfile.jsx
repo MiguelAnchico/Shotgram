@@ -1,10 +1,10 @@
-import React from 'react';
+import './Button.css';
 
 export const ButtonProfile = () => {
 	return (
 		<>
-			<button className='title-md rosa'>Compatir</button>
-			<button className='title-md'>Editar</button>
+			<button className='title-md rosa buttonBlank'>Compartir</button>
+			<button className='title-md buttonLogo'>Editar</button>
 		</>
 	);
 };

@@ -1,10 +1,21 @@
 .InfoProfile {
 	display: flex;
 	flex-direction: column;
+
 	justify-content: center;
 	align-items: center;
+
 	gap: 16px;
 	margin: 16px 16px;
+}
+
+.InfoProfileMobile {
+	display: grid;
+	grid-template-columns: 260px 1fr;
+	grid-template-rows: 1fr 10px;
+
+	justify-content: flex-start;
+	align-items: flex-start;
 }
 
 .InfoProfile .InfoProfile-image {
@@ -12,6 +23,14 @@
 	overflow: hidden;
 	width: 200px;
 	height: 200px;
+
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+.InfoProfileMobile .InfoProfile-image {
+	width: 250px;
+	height: 250px;
 }
 
 .InfoProfile .InfoProfile-image img {
@@ -30,15 +49,30 @@
 	text-align: center;
 }
 
+.InfoProfileMobile .InfoProfile-info_names {
+	text-align: left;
+}
+
 .InfoProfile .InfoProfile-info_description {
 	margin: auto;
 	width: 80%;
 	text-align: center;
 }
 
+.InfoProfileMobile .InfoProfile-info_description {
+	width: 80%;
+	max-width: 600px;
+	text-align: left;
+	margin: 0;
+}
+
 .InfoProfile .InfoProfile-info_stats {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.InfoProfileMobile .InfoProfile-info_stats {
+	grid-template-columns: 100px 100px 100px;
 }
 
 .InfoProfile .InfoProfile-info_stats div {
@@ -47,11 +81,26 @@
 
 .InfoProfile .InfoProfile-Button {
 	display: grid;
-	width: 80%;
 	grid-template-columns: 150px 150px;
 	gap: 16px;
+
 	justify-content: center;
+	width: 80%;
+
+	grid-column-start: 2;
 }
+
+.InfoProfileMobile .InfoProfile-Button {
+	width: 100%;
+	justify-content: left;
+
+	margin-top: -65px;
+}
+
+.InfoProfileMobile .InfoProfile-Button button{
+	padding: 8px;
+}
+
 .rosa {
 	background: #f5f3f5;
 	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
