@@ -17,6 +17,9 @@ import { Perfil } from './Pages/Perfil/Perfil';
 import { store } from './store/store';
 import { Provider } from 'react-redux';
 import { Home } from './Pages/Home/Home';
+import { useScreenSize } from './hooks/useScreenSize';
+import { Menu } from './Components/Shared/Menu/Menu';
+import { Buscador } from './Pages/Buscador/Buscador';
 
 const queryClient = new QueryClient();
 
@@ -25,6 +28,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 		<QueryClientProvider client={queryClient}>
 			<Toaster />
 			<BrowserRouter>
+				<Menu />
 				<Routes>
 					<Route path='/miguel' element={<Testpagemiguel />} />
 					<Route path='/milton' element={<Testpagemilton />} />
@@ -33,6 +37,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 					<Route path='/login' element={<Login />} />
 					<Route path='/register' element={<Register />} />
 					<Route path='/update' element={<Update />} />
+					<Route path='/buscador' element={<Buscador />} />
+					<Route path='/favoritos' element={<Buscador />} />
 					<Route path='/profile/:idUser' element={<Perfil />} />
 					<Route path='/home' element={<Home />} />
 				</Routes>
