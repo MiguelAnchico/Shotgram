@@ -1,0 +1,9 @@
+.ListFollows {
+    display: grid;
+    padding: 24px;
+    gap: 1.5em;
+}
+
+.scrollx {
+	overflow-x: scroll;
+}

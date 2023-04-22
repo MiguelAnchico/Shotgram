@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
 import { Toaster } from 'react-hot-toast';
@@ -19,6 +19,8 @@ import { Provider } from 'react-redux';
 import { Home } from './Pages/Home/Home';
 import { Menu } from './Components/Shared/Menu/Menu';
 import { Buscador } from './Pages/Buscador/Buscador';
+import { AppRoutes } from './routes/AppRoutes';
+import { UserRoutes } from './routes/UserRoutes';
 
 const queryClient = new QueryClient();
 
@@ -27,21 +29,17 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 		<QueryClientProvider client={queryClient}>
 			<Toaster />
 			<BrowserRouter>
+				<AppRoutes />
 				<div className='main'>
 					<Menu />
-					<Routes>
-						<Route path='/miguel' element={<Testpagemiguel />} />
-						<Route path='/milton' element={<Testpagemilton />} />
-						<Route path='/shelton' element={<Testpageshelton />} />
-
-						<Route path='/login' element={<Login />} />
-						<Route path='/register' element={<Register />} />
-						<Route path='/update' element={<Update />} />
-						<Route path='/buscador' element={<Buscador />} />
-						<Route path='/favoritos' element={<Buscador />} />
-						<Route path='/profile/:idUser' element={<Perfil />} />
-						<Route path='/home' element={<Home />} />
-					</Routes>
+					<div className='main-content'>
+						<UserRoutes />
+						<Routes>
+							<Route path='/miguel' element={<Testpagemiguel />} />
+							<Route path='/milton' element={<Testpagemilton />} />
+							<Route path='/shelton' element={<Testpageshelton />} />
+						</Routes>
+					</div>
 				</div>
 			</BrowserRouter>
 			<ReactQueryDevtools />

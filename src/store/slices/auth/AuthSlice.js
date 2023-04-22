@@ -10,6 +10,7 @@ export const authSlice = createSlice({
 			private: false,
 			adultContent: false,
 		},
+		logged: false,
 	},
 	reducers: {
 		loginAuth: (state, action) => {
@@ -17,12 +18,14 @@ export const authSlice = createSlice({
 			state.user = action.payload.user;
 			state.type = action.payload.type;
 			state.settings = action.payload.settings;
+			state.logged = true;
 		},
 		registerAuth: (state, action) => {
 			state.idUser = action.payload.id;
 			state.user = action.payload.user;
 			state.type = action.payload.type;
 			state.settings = action.payload.settings;
+			state.logged = true;
 		},
 	},
 });

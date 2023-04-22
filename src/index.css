@@ -12,6 +12,10 @@
   grid-template-columns: 270px 1fr;
 }
 
+.main-content {
+	padding-top: 80px;
+}
+
 .logo {
   width: 200px;
   height: 200px;

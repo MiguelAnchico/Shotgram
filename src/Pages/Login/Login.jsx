@@ -10,6 +10,8 @@ import banner from '../../assets/images/loginBanner.jpg';
 
 import './Login.css';
 import { useScreenSize } from '../../hooks/useScreenSize';
+import { useDispatch } from 'react-redux';
+import { login } from '../../store/slices/auth/thunks';
 
 export const Login = () => {
 	const navigate = useNavigate();
@@ -19,9 +21,14 @@ export const Login = () => {
 		formState: { errors },
 	} = useForm();
 
+	const dispatch = useDispatch();
+
 	const { width } = useScreenSize();
 
-	const onSubmit = () => navigate('/home');
+	const onSubmit = () => {
+		dispatch(login({ user: 0, password: 0 }));
+		navigate('/home');
+	};
 
 	return (
 		<div className={width > 900 ? 'login' : 'login loginMobile'}>

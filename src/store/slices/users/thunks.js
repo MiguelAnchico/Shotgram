@@ -27,9 +27,23 @@ export const getUser = (user) => {
 		const postsUser = posts.filter(
 			(post) => post.idCreador == data[0]['idUsuario']
 		);
-		data = [...data];
-		data[0]['post'] = postsUser;
 
-		if (data.length > 0) dispatch(setUser(data[0]));
+		const finalPost = {
+			idUsuario: data[0].idUsuario,
+			nombre: data[0].nombre,
+			password: data[0].password,
+			correo: data[0].correo,
+			usuario: data[0].usuario,
+			descripcion: data[0].descripcion,
+			seguidores: data[0].seguidores,
+			seguidos: data[0].seguidos,
+			imagen: data[0].imagen,
+			configuraciones: data[0].configuraciones,
+			bloqueados: data[0].bloqueados,
+			tipo: data[0].tipo,
+			post: postsUser,
+		};
+
+		if (data.length > 0) dispatch(setUser(finalPost));
 	};
 };

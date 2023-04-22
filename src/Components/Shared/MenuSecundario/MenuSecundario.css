@@ -1,0 +1,32 @@
+.MenuSecundario {
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: calc(100% - 270px);
+    height: 80px;
+
+    background-color: #f5f3f5;
+}
+
+.MenuSecundarioMobile {
+    width: 100%;
+}
+
+.MenuSecundario img {
+    width: 32px;
+}
+
+.MenuSecundario > div {
+    display: flex;
+    gap: 12px;
+
+    padding: 0 24px;
+}
+
+.MenuSecundario > h3 {
+    padding: 0 24px;
+}

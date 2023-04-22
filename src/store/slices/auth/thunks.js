@@ -9,9 +9,9 @@ export const login = ({ user, password }) => {
 		//);
 
 		// Linea a eliminar una vez se conecte con el backend
-		const data = users.filter((account) => account.idUsuario == user);
+		const data = users.filter((account) => account.idUsuario == '00000002');
 		let confirmCredentials;
-		if (data.length > 0) confirmCredentials = data[0].password == password;
+		if (data.length > 0) confirmCredentials = data[0].password == 'Passwold';
 		if (confirmCredentials)
 			dispatch(
 				loginAuth({

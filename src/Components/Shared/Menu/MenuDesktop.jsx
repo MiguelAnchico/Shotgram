@@ -5,6 +5,7 @@ import searchIcon from '../../../assets/images/buscar.png';
 import agregarIcon from '../../../assets/images/agregar.png';
 import userIcon from '../../../assets/images/user.png';
 import arrowIcon from '../../../assets/images/flecha-angulo-derecho.png';
+import settingsIcon from '../../../assets/images/configuraciones.png';
 
 import { useSelector } from 'react-redux';
 import './MenuDesktop.css';
@@ -72,11 +73,11 @@ export const MenuDesktop = () => {
 				<img src={arrowIcon} />
 			</NavLink>
 			<NavLink
-				to={'/profile/' + idUser}
+				to={'/configuraciones'}
 				className={(args) => ` ${args.isActive ? 'active' : ''}`}
 			>
 				<div>
-					<img src={userIcon} />
+					<img src={settingsIcon} />
 					<p className='title-sm'>Configuraciones</p>
 				</div>
 				<img src={arrowIcon} />
