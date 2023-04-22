@@ -1,0 +1,19 @@
+.EditPerfil form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    padding: 32px;
+    max-width: 500px;
+
+    margin: auto;
+}
+.EditPerfil h3 {
+    text-align: center;
+    margin-left: -20px;
+}
+
+.EditPerfil .EditPerfil-retroceder {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+}

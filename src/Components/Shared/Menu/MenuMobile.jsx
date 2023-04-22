@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import homeIcon from '../../../assets/images/hogar.png';
 import favIcon from '../../../assets/images/fav.png';
 import searchIcon from '../../../assets/images/buscar.png';
@@ -10,6 +10,8 @@ import { useSelector } from 'react-redux';
 
 export const MenuMobile = () => {
 	const { idUser } = useSelector((state) => state.auth);
+	const { user } = useSelector((state) => state.users);
+	const { pathname } = useLocation();
 
 	return (
 		<div className='MenuMobile'>
@@ -41,6 +43,7 @@ export const MenuMobile = () => {
 			</NavLink>
 			<NavLink
 				to={'/profile/' + idUser}
+				isActive={() => ['/profile/' + user?.idUsuario].includes(pathname)}
 				className={(args) => ` ${args.isActive ? 'active' : ''}`}
 			>
 				<img src={userIcon} />

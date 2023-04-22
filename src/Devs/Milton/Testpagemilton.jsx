@@ -1,6 +1,5 @@
-import { CardPost } from "../../Components/CardPost/CardPost";
-import { Buscador } from "../../Pages/Buscador/Buscador";
-import { ConfiguracionMenu } from "../../Pages/Configuraciones/ConfiguracionMenu/ConfiguracionMenu";
+import { CardPost } from '../../Components/CardPost/CardPost';
+import { Buscador } from '../../Pages/Buscador/Buscador';
 export const Testpagemilton = () => {
 	return (
 		<div>

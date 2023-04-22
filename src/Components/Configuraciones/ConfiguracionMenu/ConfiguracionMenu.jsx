@@ -12,7 +12,7 @@ export const ConfiguracionMenu = () => {
 					<span>Configuración</span>
 					<span>perfil</span>
 				</h2>
-                
+
 				{/* Inicio Boton */}
 				<a className='input-button'>
 					<div className='input-button-container'>
@@ -30,7 +30,6 @@ export const ConfiguracionMenu = () => {
 					/>
 				</a>
 				{/* Fin Boton */}
-
 
 				<div className='input-button'>
 					<div className='input-button-container'>

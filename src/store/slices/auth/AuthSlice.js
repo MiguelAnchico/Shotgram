@@ -27,8 +27,15 @@ export const authSlice = createSlice({
 			state.settings = action.payload.settings;
 			state.logged = true;
 		},
+		logoutAuth: (state) => {
+			state.idUser = '';
+			state.user = '';
+			state.type = '';
+			state.settings = '';
+			state.logged = false;
+		},
 	},
 });
 
 // Action creators are generated for each case reducer function
-export const { loginAuth } = authSlice.actions;
+export const { loginAuth, registerAuth, logoutAuth } = authSlice.actions;

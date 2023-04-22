@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import homeIcon from '../../../assets/images/hogar.png';
 import favIcon from '../../../assets/images/fav.png';
 import searchIcon from '../../../assets/images/buscar.png';
@@ -14,6 +14,8 @@ import logo from '../../../assets/images/Logo.png';
 
 export const MenuDesktop = () => {
 	const { idUser } = useSelector((state) => state.auth);
+	const { user } = useSelector((state) => state.users);
+	const { pathname } = useLocation();
 
 	return (
 		<div className='MenuDesktop'>
@@ -64,6 +66,7 @@ export const MenuDesktop = () => {
 			</NavLink>
 			<NavLink
 				to={'/profile/' + idUser}
+				isActive={() => ['/profile/' + user?.idUsuario].includes(pathname)}
 				className={(args) => ` ${args.isActive ? 'active' : ''}`}
 			>
 				<div>
@@ -74,6 +77,11 @@ export const MenuDesktop = () => {
 			</NavLink>
 			<NavLink
 				to={'/configuraciones'}
+				isActive={() =>
+					['/configuraciones/perfil', '/configuraciones/cuenta'].includes(
+						pathname
+					)
+				}
 				className={(args) => ` ${args.isActive ? 'active' : ''}`}
 			>
 				<div>
