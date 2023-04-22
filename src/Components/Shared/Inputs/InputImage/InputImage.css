@@ -9,16 +9,29 @@
     align-items: center;
 }
 
-.InputImage .InputImage-container_image {
+.InputImage .InputImage-container_image-circle {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 
     overflow: hidden;
     border-radius: 100%;
+}
+
+.InputImage .InputImage-container_image-rectangle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    max-width: 400px;
+
+    overflow: hidden;
 }
 
 .InputImage input {
@@ -30,8 +43,9 @@
     cursor: pointer;
 }
 
-.InputImage .InputImage-container_image img {
+.InputImage img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    aspect-ratio: 1;
 }

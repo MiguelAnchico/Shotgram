@@ -36,7 +36,7 @@ export const Update = () => {
 					className='update-container-form'
 					onSubmit={handleSubmit(onSubmit)}
 				>
-					<InputImage />
+					<InputImage text={'Cambiar Imagen'} type={'circle'} />
 					<InputResize errors={errors} register={register} />
 					<button type='submit' className='title-sm'>
 						Actualizar Perfil

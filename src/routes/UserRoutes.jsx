@@ -5,6 +5,7 @@ import { Buscador } from '../Pages/Buscador/Buscador';
 import { Perfil } from '../Pages/Perfil/Perfil';
 import { Home } from '../Pages/Home/Home';
 import { FavPosts } from '../Pages/FavPosts/FavPosts';
+import { AgregarPublicacion } from '../Pages/AgregarPublicacion/AgregarPublicacion';
 
 export const UserRoutes = () => {
 	const { logged } = useSelector((state) => state.auth);
@@ -14,6 +15,7 @@ export const UserRoutes = () => {
 				<>
 					<Route path='/buscador' element={<Buscador />} />
 					<Route path='/favoritos' element={<FavPosts />} />
+					<Route path='/agregar' element={<AgregarPublicacion />} />
 					<Route path='/profile/:idUser' element={<Perfil />} />
 					<Route path='/home' element={<Home />} />
 				</>

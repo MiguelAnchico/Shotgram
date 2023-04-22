@@ -3,12 +3,18 @@ import userDefaults from '../../../../assets/images/userDefault.jpg';
 
 import './InputImage.css';
 
-export const InputImage = () => {
+export const InputImage = ({ text, type }) => {
 	const [imgPreview, setImgPreview] = useState(userDefaults);
 
 	return (
 		<div className='InputImage'>
-			<div className='InputImage-container_image'>
+			<div
+				className={
+					type == 'circle'
+						? 'InputImage-container_image-circle'
+						: 'InputImage-container_image-rectangle'
+				}
+			>
 				<img src={imgPreview} />
 			</div>
 			<label className='body-sm color-logo-light'>
@@ -19,7 +25,7 @@ export const InputImage = () => {
 						setImgPreview(URL.createObjectURL(e.target.files[0]))
 					}
 				/>
-				Cambiar Foto
+				{text}
 			</label>
 		</div>
 	);
