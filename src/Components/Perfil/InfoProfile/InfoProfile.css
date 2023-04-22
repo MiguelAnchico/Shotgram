@@ -12,7 +12,7 @@
 .InfoProfileMobile {
 	display: grid;
 	grid-template-columns: 260px 1fr;
-	grid-template-rows: 1fr 10px;
+	grid-template-rows: 1fr 50px;
 
 	justify-content: flex-start;
 	align-items: flex-start;
@@ -29,8 +29,8 @@
 }
 
 .InfoProfileMobile .InfoProfile-image {
-	width: 250px;
-	height: 250px;
+	width: 200px;
+	height: 200px;
 }
 
 .InfoProfile .InfoProfile-image img {
@@ -93,8 +93,6 @@
 .InfoProfileMobile .InfoProfile-Button {
 	width: 100%;
 	justify-content: left;
-
-	margin-top: -65px;
 }
 
 .InfoProfileMobile .InfoProfile-Button button{
