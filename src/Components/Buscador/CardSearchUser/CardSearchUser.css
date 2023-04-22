@@ -1,9 +1,34 @@
 .CardSearchUser{
     display: flex;
     flex-direction: row;
+    gap: 10px;
+    align-items: center;
 }
 
 .CardSearchUser-img{
-    width: 60px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
+    object-fit: cover;
+}
+
+.CardSearchUser-UserDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    justify-content: center;
+}
+
+.CardSearchUser-UserDetails-User{
+    font-family: apex;
+}
+
+.CardSearchUser-UserDetails-Name{
+    font-family: salvatore;
+    font-size: 11px;
+}
+
+.CardSearchUser-icon{
+    height: 15px;
+    align-items: center;
 }
