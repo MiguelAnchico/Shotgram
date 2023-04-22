@@ -26,7 +26,7 @@ export const Publicacion = () => {
                     <div className='Publicacion-userContainer-data color-logo'>
                         <div className='Publicacion-userContainer-data-user'>{publi.nombreCreador}</div>
                     </div>
-                    <button className=''>Seguir</button>
+                    <button className='Publicacion-userContainer-button'>Seguir</button>
                 </div>
 
             </div>
