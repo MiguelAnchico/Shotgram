@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form';
 import { Inputs } from '../../Components/Shared/Inputs/Inputs';
 
 import userIcon from '../../assets/images/user.png';
-import logo from '../../assets/images/logo.png';
+import logo from '../../assets/images/Logo.png';
 import banner from '../../assets/images/loginBanner.jpg';
 
 import './Register.css';
