@@ -9,7 +9,6 @@
     object-fit: cover;
 }
 
-
 .Publicacion-userContainer{
     display: flex;
     align-items: center;
@@ -37,6 +36,20 @@
 .Publicacion-descripcion{
     font-family: salvatore;
     font-size: 14px;
-
+    margin: 4px 0px;
 }
 
+.Publicacion-interaction {
+    /* background: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Publicacion-interaction-likeBlock img{
+    width: 30px;
+}
+
+.Publicacion-interaction-favorite img{
+    width: 30px;;
+}

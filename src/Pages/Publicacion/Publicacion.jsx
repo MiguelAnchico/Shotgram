@@ -39,6 +39,16 @@ export const Publicacion = () => {
 				<div className='Publicacion-descripcion .color-black'>
 					<p>{publi.descripcion}</p>
 				</div>
+				<div className='Publicacion-interaction'>
+					<div className='Publicacion-interaction-likeBlock'>
+						<img src='src\assets\images\corazon.png' alt='' />
+						<img src='src\assets\images\chat.png' alt='' />
+					</div>
+					<div className='Publicacion-interaction-favorite'>
+						<img src='src\assets\images\estrella-border.png' alt='' />
+                        
+					</div>
+				</div>
 			</div>
 		</>
 	);
