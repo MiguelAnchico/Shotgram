@@ -1,11 +1,17 @@
 import { useNavigate, Link } from 'react-router-dom';
 
-import { Inputs } from '../../Components/Inputs/Inputs';
-
-import logo from '../../assets/images/logo.png';
+import logo from '../../assets/images/Logo.png';
 import { useForm } from 'react-hook-form';
+import banner from '../../assets/images/loginBanner.jpg';
+
+import './Update.css';
+import { useScreenSize } from '../../hooks/useScreenSize';
+import { InputResize } from '../../Components/Shared/Inputs/InputResize/InputResize';
+import { InputImage } from '../../Components/Shared/Inputs/InputImage/InputImage';
+import { useSelector } from 'react-redux';
 
 export const Update = () => {
+	const navigate = useNavigate();
 	const {
 		register,
 		handleSubmit,
@@ -13,43 +19,34 @@ export const Update = () => {
 		watch,
 	} = useForm();
 
-	const onSubmit = (data) => navigate('/profile');
+	const { idUser } = useSelector((state) => state.auth);
+
+	const { width } = useScreenSize();
+
+	const onSubmit = () => navigate('/profile/' + idUser);
 
 	return (
-		<div>
-			<div className='register-container-imagen'>
-				<img src={logo} />
-				<h2 className='title-lg color-black'>Actualizar Información</h2>
+		<div className={width > 900 ? 'update' : 'update updateMobile'}>
+			<div className='update-container'>
+				<div className='update-container-imagen'>
+					<img src={logo} />
+					<h2 className='title-lg color-black'>Actualizar Información</h2>
+				</div>
+				<form
+					className='update-container-form'
+					onSubmit={handleSubmit(onSubmit)}
+				>
+					<InputImage text={'Cambiar Imagen'} type={'circle'} />
+					<InputResize errors={errors} register={register} />
+					<button type='submit' className='title-sm'>
+						Actualizar Perfil
+					</button>
+				</form>
+				<Link to={'/profile/' + idUser} className='body-sm'>
+					Saltar
+				</Link>
 			</div>
-			<form
-				className='register-container-form'
-				onSubmit={handleSubmit(onSubmit)}
-			>
-				<Inputs
-					register={register}
-					name='fullname'
-					type={'text'}
-					label={'Nombre Completo'}
-					errors={errors}
-					required={true}
-					minlength={5}
-				/>
-				<Inputs
-					register={register}
-					name='description'
-					type={'text'}
-					label={'Cuentanos sobre ti'}
-					errors={errors}
-					required={false}
-					minlength={6}
-				/>
-				<button type='submit' className='title-sm'>
-					Registrarse
-				</button>
-			</form>
-			<Link to='/profile' className='body-sm'>
-				Saltar
-			</Link>
+			{width > 900 && <img className='update-banner' src={banner} />}
 		</div>
 	);
 };

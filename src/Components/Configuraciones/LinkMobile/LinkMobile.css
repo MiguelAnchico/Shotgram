@@ -1,0 +1,61 @@
+.LinkMobile {
+    padding: 32px;
+}
+
+.back-icon img{
+    opacity: 0.4;
+    height: 35px;
+}
+
+.ConfiguracionMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 32px;
+}
+
+.ConfiguracionMenu-title{
+    font-family: apex;
+
+    color: #50003E;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-button {
+	width: 100%;
+	padding: 15px 30px;
+
+	border: none;
+	border-radius: 8px;
+
+	background-color: #e2e0e2;
+	color: #50003e;
+	cursor: pointer;
+
+	font-family: apex;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-button-container{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.input-button-icon{
+    height: 20px;
+}
+
+.input-button-icon-forward{
+    height: 28px;
+    opacity: 0.4;
+}

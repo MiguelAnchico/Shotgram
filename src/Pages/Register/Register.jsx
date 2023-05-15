@@ -1,27 +1,39 @@
 import { useNavigate, Link } from 'react-router-dom';
 
-import { InputPassword } from '../../Components/Inputs/InputPassword/InputPassword';
+import { InputPassword } from '../../Components/Shared/Inputs/InputPassword/InputPassword';
 import { useForm } from 'react-hook-form';
-import { Inputs } from '../../Components/Inputs/Inputs';
+import { Inputs } from '../../Components/Shared/Inputs/Inputs';
 
 import userIcon from '../../assets/images/user.png';
-import logo from '../../assets/images/logo.png';
+import logo from '../../assets/images/Logo.png';
+import banner from '../../assets/images/loginBanner.jpg';
 
 import './Register.css';
+import { useScreenSize } from '../../hooks/useScreenSize';
+import { useDispatch } from 'react-redux';
+
+import { register } from '../../store/slices/auth/thunks';
 
 export const Register = () => {
 	const navigate = useNavigate();
 	const {
-		register,
+		register: reg,
 		handleSubmit,
 		formState: { errors },
 		watch,
 	} = useForm();
 
-	const onSubmit = (data) => navigate('/update');
+	const dispatch = useDispatch();
+
+	const onSubmit = (data) => {
+		dispatch(register({ id: '00000002', user: 'Chun.li' }));
+		navigate('/update');
+	};
+
+	const { width } = useScreenSize();
 
 	return (
-		<div className='register'>
+		<div className={width > 900 ? 'register' : 'register registerMobile'}>
 			<div className='register-container'>
 				<div className='register-container-imagen'>
 					<img src={logo} />
@@ -33,7 +45,7 @@ export const Register = () => {
 					onSubmit={handleSubmit(onSubmit)}
 				>
 					<Inputs
-						register={register}
+						register={reg}
 						name='fullname'
 						type={'text'}
 						label={'Nombre Completo'}
@@ -43,7 +55,7 @@ export const Register = () => {
 						icon={userIcon}
 					/>
 					<Inputs
-						register={register}
+						register={reg}
 						name='user'
 						type={'text'}
 						label={'Usuario'}
@@ -53,7 +65,7 @@ export const Register = () => {
 						icon={userIcon}
 					/>
 					<InputPassword
-						register={register}
+						register={reg}
 						name='password'
 						label={'Contraseña'}
 						errors={errors}
@@ -61,7 +73,7 @@ export const Register = () => {
 						minlength={5}
 					/>
 					<InputPassword
-						register={register}
+						register={reg}
 						name='verifyPassword'
 						label={'Confirmar Contraseña'}
 						errors={errors}
@@ -81,6 +93,7 @@ export const Register = () => {
 					</Link>
 				</div>
 			</div>
+			{width > 900 && <img className='register-banner' src={banner} />}
 		</div>
 	);
 };

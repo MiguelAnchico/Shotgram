@@ -13,7 +13,8 @@
             "privado": false,
             "contenidoAdulto": false
         },
-        "bloqueados" : []
+        "bloqueados" : [],
+        "tipo" : "usuario"
     },
     {
         "idUsuario" : "00000002",
@@ -23,13 +24,14 @@
         "usuario": "Chun.li",
         "descripcion": "Me gusta la cocina, hace 10 años que trabajo como chef en el restaurante de mi familia, y me gustaria poder viajar por todo el mundo",
         "seguidores" : ["juan.carlos", "Kali:)"],
-        "seguidos" : 2,
+        "seguidos" : ["Kali:)", "juan.carlos"],
         "imagen" : "https://images.unsplash.com/photo-1475823678248-624fc6f85785?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
         "configuraciones": {
             "privado": false,
             "contenidoAdulto": false
         },
-        "bloqueados" : []
+        "bloqueados" : [],
+        "tipo" : "usuario"
     },
     {
         "idUsuario" : "00000003",
@@ -39,13 +41,14 @@
         "usuario": "Kali:)",
         "descripcion": "No necesito hablar, solo actuar",
         "seguidores" : ["Chun.li", "juan.carlos" , "vss.rios", "oliver" , "loca.memes"],
-        "seguidos" : 5,
+        "seguidos" : ["Chun.li", "juan.carlos" , "vss.rios", "oliver" , "loca.memes"],
         "imagen" : "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
         "configuraciones": {
             "privado": false,
             "contenidoAdulto": false
         },
-        "bloqueados" : []
+        "bloqueados" : [],
+        "tipo" : "usuario"
     },
     {
         "idUsuario" : "00000004",
@@ -54,14 +57,15 @@
         "correo": "vanessarios@gmail.com",
         "usuario": "vss.rios",
         "descripcion": "Soy una programadora en vista de mi pasión por la tecnología y como ingeniera comprometida con la honestidad, la calidad y la prestación de un excelente servicio en el área del mantenimiento, me gustaría formar parte de una empresa en la cual puedo crecer profesionalmente",
-        "seguidores" : 3,
-        "seguidos" : 3,
+        "seguidores" : ["Kali:)", "oliver", "loca.memes"],
+        "seguidos" : ["Kali:)", "oliver", "juan.carlos"],
         "imagen" : "https://images.unsplash.com/photo-1528228728175-149802236c04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
         "configuraciones": {
             "privado": false,
             "contenidoAdulto": false
         },
-        "bloqueados" : []
+        "bloqueados" : [],
+        "tipo" : "usuario"
     },
     {
         "idUsuario" : "00000005",
@@ -70,14 +74,15 @@
         "correo": "aliver69@gmail.com",
         "usuario": "oliver",
         "descripcion": "Nuevo canción a fin de año, atentos a los posts",
-        "seguidores" : 2,
-        "seguidos" : 3,
+        "seguidores" : ["Kali:)", "vss.rios"],
+        "seguidos" : ["Kali:)", "juan.carlos", "loca.memes"],
         "imagen" : "https://images.unsplash.com/photo-1600574691453-499962cc0611?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
         "configuraciones": {
             "privado": false,
             "contenidoAdulto": false
         },
-        "bloqueados" : []
+        "bloqueados" : [],
+        "tipo" : "usuario"
     },
     {
         "idUsuario" : "00000006",
@@ -86,13 +91,14 @@
         "correo": "memes90@gmail.com",
         "usuario": "loca.memes",
         "descripcion": "Memes por doquier",
-        "seguidores" : 3,
-        "seguidos" : 2,
+        "seguidores" : ["Kali:)", "oliver"],
+        "seguidos" : ["juan.carlos", "vss.rios"],
         "imagen" : "https://images.unsplash.com/photo-1565799284935-da1e43e7944e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
         "configuraciones": {
             "privado": false,
             "contenidoAdulto": false
         },
-        "bloqueados" : []
+        "bloqueados" : [],
+        "tipo" : "usuario"
     }
 ]

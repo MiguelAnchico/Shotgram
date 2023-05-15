@@ -1,0 +1,64 @@
+.update {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.updateMobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.update .update-banner{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.update .update-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 16px;
+
+    width: 320px;
+    height: auto;
+}
+
+.update .update-container .update-container-imagen  {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.update .update-container .update-container-imagen img{
+    width: 150px;
+    height: 150px;
+
+    object-fit: contain;
+}
+
+.update .update-container form {
+    display: flex;
+    flex-direction: column;
+
+    gap:16px;
+    width: 100%;
+}
+
+.update .update-container form a {
+    text-align: right;
+}
+
+.update .update-container .update-container-register {
+    display: flex;
+    gap: 8px;
+}

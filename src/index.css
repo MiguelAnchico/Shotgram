@@ -7,6 +7,43 @@
 	-moz-box-sizing: border-box;
 }
 
+.main {
+  display: grid;
+  grid-template-columns: 270px 1fr;
+}
+
+.main-content {
+	padding-top: 80px;
+}
+
+.back-icon {
+	margin-left: 36px;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  transform: scale(165%);
+}
+
+@media (max-width: 650px) {
+  .main {
+    display: inherit;
+    padding-bottom: 80px;
+  }
+}
+
+
 @font-face {
 	font-family: apex;
 	font-weight: 650;
