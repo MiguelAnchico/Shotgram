@@ -1,6 +1,11 @@
 .Publicacion{
-    width: 85%;
-    /* background: red; */
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    width: 100%;
+    padding: 32px;
 }
 
 .Publicacion-img{
@@ -8,7 +13,6 @@
     height: 300px;
     object-fit: cover;
 }
-
 
 .Publicacion-userContainer{
     display: flex;
@@ -32,4 +36,32 @@
     font-family: apex;
     font-size: 20px;
     padding: 12px 40px;
+}
+
+.Publicacion-descripcion{
+    font-family: salvatore;
+    font-size: 14px;
+    margin: 4px 0px;
+}
+
+.Publicacion-interaction {
+    /* background: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.Publicacion-interaction-likeBlock{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.Publicacion-interaction-likeBlock img{
+    height: 30px;
+}
+
+.Publicacion-interaction-favorite img{
+    width: 30px;
 }

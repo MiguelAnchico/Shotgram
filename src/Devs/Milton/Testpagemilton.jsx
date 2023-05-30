@@ -1,10 +1,16 @@
-import { CardPost } from '../../Components/CardPost/CardPost';
-import { Buscador } from '../../Pages/Buscador/Buscador';
-import { Publicacion } from '../../Pages/Publicacion/Publicacion';
+
+import { Login } from '../../Pages/Login/Login';
+import { Comments } from '../../Pages/Publicacion/Comments/Comments';
+
 export const Testpagemilton = () => {
 	return (
 		<div>
-			<Publicacion />
+			{/* <AgregarPublicacion /> */}
+			{/* <Publicacion /> */}
+            {/* <Register /> */}
+            <Login />
+            <Comments />
+            
 		</div>
 	);
 };
