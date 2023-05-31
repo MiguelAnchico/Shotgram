@@ -10,25 +10,33 @@ import banner from '../../assets/images/loginBanner.jpg';
 
 import './Login.css';
 import { useScreenSize } from '../../hooks/useScreenSize';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { login } from '../../store/slices/auth/thunks';
+import { useEffect } from 'react';
 
 export const Login = () => {
-	const navigate = useNavigate();
 	const {
 		register,
 		handleSubmit,
 		formState: { errors },
 	} = useForm();
 
+	const { idUser } = useSelector((state) => state.auth);
+
 	const dispatch = useDispatch();
+	const navigate = useNavigate();
 
 	const { width } = useScreenSize();
 
-	const onSubmit = () => {
-		dispatch(login({ user: 0, password: 0 }));
-		navigate('/home');
+	const onSubmit = (data) => {
+		dispatch(login({ user: data.name, password: data.Password }));
 	};
+
+	useEffect(() => {
+		if (idUser) {
+			navigate('/home');
+		}
+	}, [idUser]);
 
 	return (
 		<div className={width > 900 ? 'login' : 'login loginMobile'}>

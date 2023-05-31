@@ -3,6 +3,7 @@ import iconMenu from '../../assets/images/menu-hamburguesa.png';
 import iconLike from '../../assets/images/corazon.png';
 import iconComment from '../../assets/images/comentario-menos.png';
 import iconFav from '../../assets/images/estrella-border.png';
+import { Link } from 'react-router-dom';
 
 export const CardPost = ({
 	imageUser,
@@ -12,11 +13,14 @@ export const CardPost = ({
 	description,
 	numberOfLikes,
 	numberOfComments,
+	id,
 }) => {
 	return (
 		<div className='CardPost'>
 			<div className='CardPost-header'>
-				<img src={imageUser} className='CardPost-header_profile' />
+				<Link to={'/profile/' + id}>
+					<img src={imageUser} className='CardPost-header_profile' />
+				</Link>
 				<div className='CardPost-header_profile-details'>
 					<h2 className='title-sm'>{user}</h2>
 					<span className='color-black-op4 body-sm'>{datePost}</span>

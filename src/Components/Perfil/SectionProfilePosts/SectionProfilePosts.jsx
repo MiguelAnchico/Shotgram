@@ -4,9 +4,9 @@ import './SectionProfilePosts.css';
 export const SectionProfilePosts = ({ posts }) => {
 	return (
 		<div className='SectionProfilePosts'>
-			{posts?.map(({ imagen, idPublicacion }) => (
-				<div className='SectionProfilePosts_post' key={idPublicacion}>
-					<img src={imagen} />
+			{posts?.map(({ contenido, id }) => (
+				<div className='SectionProfilePosts_post' key={id}>
+					<img src={contenido} />
 				</div>
 			))}
 		</div>

@@ -22,17 +22,16 @@ export const Perfil = () => {
 	return (
 		<div className='Perfil' style={width > 900 ? { padding: '32px' } : {}}>
 			<InfoProfile
-				imageUser={user?.imagen}
-				name={user?.nombre}
-				user={user?.usuario}
-				description={user?.descripcion}
-				follows={user?.seguidos?.length}
-				followers={user?.seguidores?.length}
-				posts={user?.post?.length}
-				idProfile={user?.idUsuario}
+				imageUser={user?.usuario?.imagen}
+				name={user?.usuario?.nombre}
+				user={user?.usuario?.usuario}
+				description={user?.usuario?.descripcion}
+				follows={user?.usuario?.seguidos?.length}
+				followers={user?.usuario?.seguidores?.length}
+				posts={user?.publicaciones?.length}
+				idProfile={user?.usuario?.id}
 			/>
-			<CardHighlights />
-			<SectionProfilePosts posts={user?.post} />
+			<SectionProfilePosts posts={user?.publicaciones} />
 		</div>
 	);
 };

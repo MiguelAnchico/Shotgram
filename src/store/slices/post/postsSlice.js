@@ -5,17 +5,24 @@ export const postSlice = createSlice({
 	initialState: {
 		posts: [],
 		post: {},
+		subido: false,
+		page: 1,
 	},
 	reducers: {
 		setPosts: (state, action) => {
-			state.posts = action.payload;
+			state.posts = [...state.posts, ...action.payload];
+			state.page++;
 		},
 
 		setPost: (state, action) => {
 			state.post = action.payload;
 		},
+
+		setSubiendo: (state, action) => {
+			state.subido = action.payload;
+		},
 	},
 });
 
 // Action creators are generated for each case reducer function
-export const { setPosts, setPost } = postSlice.actions;
+export const { setPosts, setPost, setSubiendo } = postSlice.actions;

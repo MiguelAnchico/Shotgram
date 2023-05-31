@@ -1,49 +1,49 @@
 import { setUser, setUsers } from './usersSlice';
 import users from '../../../../jsons/Users.json';
 import posts from '../../../../jsons/Publicaciones.json';
+import axios from 'axios';
 
-export const getUsers = () => {
+export const getUsers = (id) => {
 	return async (dispatch, getState) => {
 		// Estructura de peticion fetch
-		//const { data } = await fetch(
-		//	'https://github.com/MiguelAnchico/Shotgram/blob/5550647d20b261cf9f159db53cb1c48f2f5703e5/jsons/Users.json'
-		//);
+		const data = await axios
+			.get('https://shotgrambackend-production.up.railway.app/api/usuarios/', {
+				headers: {
+					'x-token': localStorage.getItem('token'),
+				},
+			})
+			.then(({ data }) => {
+				if (data.ok) {
+					return data;
+				}
+				throw new Error('Something went wrong');
+			});
 
-		// Linea a eliminar una vez se conecte con el backend
-		const data = users;
+		const users = data.usuarios.filter((user) => user.id != id);
 
-		dispatch(setUsers(data));
+		dispatch(setUsers(users));
 	};
 };
 export const getUser = (user) => {
 	return async (dispatch, getState) => {
 		// Estructura de peticion fetch
-		//const { data } = await fetch(
-		//	'https://github.com/MiguelAnchico/Shotgram/blob/5550647d20b261cf9f159db53cb1c48f2f5703e5/jsons/Users.json/user/${user}'
-		//);
+		const data = await axios
+			.get(
+				'https://shotgrambackend-production.up.railway.app/api/usuarios/' +
+					user,
+				{
+					headers: {
+						'x-token': localStorage.getItem('token'),
+					},
+				}
+			)
+			.then(({ data }) => {
+				if (data.ok) {
+					return data;
+				}
+				throw new Error('Something went wrong');
+			});
 
-		// Lineas a eliminar una vez se conecte con el backend
-		let data = users.filter((account) => account.idUsuario == user);
-		const postsUser = posts.filter(
-			(post) => post.idCreador == data[0]['idUsuario']
-		);
-
-		const finalPost = {
-			idUsuario: data[0].idUsuario,
-			nombre: data[0].nombre,
-			password: data[0].password,
-			correo: data[0].correo,
-			usuario: data[0].usuario,
-			descripcion: data[0].descripcion,
-			seguidores: data[0].seguidores,
-			seguidos: data[0].seguidos,
-			imagen: data[0].imagen,
-			configuraciones: data[0].configuraciones,
-			bloqueados: data[0].bloqueados,
-			tipo: data[0].tipo,
-			post: postsUser,
-		};
-
-		if (data.length > 0) dispatch(setUser(finalPost));
+		dispatch(setUser(data));
 	};
 };

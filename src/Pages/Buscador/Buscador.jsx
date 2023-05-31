@@ -2,21 +2,26 @@ import { CardSearchUser } from '../../Components/Buscador/CardSearchUser/CardSea
 import { BarSearchUser } from '../../Components/Buscador/BarSearchUser/BarSearchUser';
 import './Buscador.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { setUsers } from '../../store/slices/users/usersSlice';
+import { useEffect, useState } from 'react';
 
 export const Buscador = () => {
+	const [list, setList] = useState([]);
 	const { users } = useSelector((state) => state.users);
+
+	useEffect(() => {
+		setList(users);
+	}, [users]);
 
 	return (
 		<div className='Buscador'>
-			<BarSearchUser />
+			<BarSearchUser list={setList} />
 			<div className='buscador-resultados'>
-				{users?.map((user) => (
+				{list?.map((user) => (
 					<CardSearchUser
 						url={user.imagen}
 						name={user.nombre}
 						user={user.usuario}
-						idUser={user.idUsuario}
+						idUser={user.id}
 					/>
 				))}
 			</div>

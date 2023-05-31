@@ -1,35 +1,51 @@
 import users from '../../../../jsons/Users.json';
+import axios from 'axios';
 import { loginAuth } from './AuthSlice';
+import { useNavigate } from 'react-router-dom';
 
 export const login = ({ user, password }) => {
 	return async (dispatch, getState) => {
 		// Estructura de peticion fetch
-		//const { data } = await fetch(
-		//	'https://github.com/MiguelAnchico/Shotgram/blob/5550647d20b261cf9f159db53cb1c48f2f5703e5/jsons/Users.json'
-		//);
+
+		const data = await axios
+			.post('https://shotgrambackend-production.up.railway.app/api/auth/', {
+				user,
+				password,
+			})
+			.then(({ data }) => {
+				if (data.ok) {
+					return data;
+				}
+				throw new Error('Something went wrong');
+			});
 
 		// Linea a eliminar una vez se conecte con el backend
-		const data = users.filter((account) => account.idUsuario == '00000002');
-		let confirmCredentials;
-		if (data.length > 0) confirmCredentials = data[0].password == 'Passwold';
-		if (confirmCredentials)
-			dispatch(
-				loginAuth({
-					id: data[0].idUsuario,
-					user: data[0].usuario,
-					type: data[0].tipo,
-					settings: data[0].configuraciones,
-				})
-			);
+		dispatch(
+			loginAuth({
+				id: data.usuario.id,
+				user: data.usuario.usuario,
+				type: data.usuario.tipo,
+				settings: data.usuario.configuraciones,
+				token: data.token,
+			})
+		);
 	};
 };
 
 export const register = ({ id, user }) => {
 	return async (dispatch, getState) => {
 		// Estructura de peticion fetch
-		//const { data } = await fetch(
-		//	'https://github.com/MiguelAnchico/Shotgram/blob/5550647d20b261cf9f159db53cb1c48f2f5703e5/jsons/Users.json/user/${user}'
-		//);
+		const data = await axios
+			.post('https://shotgrambackend-production.up.railway.app/api/auth/new', {
+				user,
+				password,
+			})
+			.then(({ data }) => {
+				if (data.ok) {
+					return data;
+				}
+				throw new Error('Something went wrong');
+			});
 		// Lineas a eliminar una vez se conecte con el backend
 
 		dispatch(
@@ -49,9 +65,6 @@ export const register = ({ id, user }) => {
 export const logout = () => {
 	return async (dispatch, getState) => {
 		// Estructura de peticion fetch
-		//const { data } = await fetch(
-		//	'https://github.com/MiguelAnchico/Shotgram/blob/5550647d20b261cf9f159db53cb1c48f2f5703e5/jsons/Users.json/user/${user}'
-		//);
-		// Lineas a eliminar una vez se conecte con el backend
+		dispatch(logoutAuth());
 	};
 };
