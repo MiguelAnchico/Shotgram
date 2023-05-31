@@ -7,10 +7,11 @@ import './ListFollows.css';
 
 export const ListFollows = () => {
 	const { users } = useSelector((state) => state.users);
+	const { idUser } = useSelector((state) => state.auth);
 	const dispatch = useDispatch();
 
 	useEffect(() => {
-		dispatch(getUsers());
+		dispatch(getUsers(idUser));
 	}, []);
 
 	return (
@@ -24,8 +25,8 @@ export const ListFollows = () => {
 				<CardUserFollow
 					image={user?.imagen}
 					user={user?.usuario}
-					idUser={user?.idUsuario}
-					key={user?.idUsuario}
+					idUser={user?.id}
+					key={user?.id}
 				/>
 			))}
 		</div>

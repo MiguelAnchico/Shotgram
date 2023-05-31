@@ -19,6 +19,7 @@ export const EditPerfil = () => {
 		register,
 		handleSubmit,
 		formState: { errors },
+		watch,
 	} = useForm();
 
 	const onSubmit = () => {
@@ -38,7 +39,12 @@ export const EditPerfil = () => {
 				</div>
 			)}
 			<form onSubmit={handleSubmit(onSubmit)}>
-				<InputImage text={'Cambiar Imagen'} type={'circle'} />
+				<InputImage
+					text={'Cambiar Imagen'}
+					register={register}
+					watch={watch}
+					type={'circle'}
+				/>
 				<Inputs
 					register={register}
 					name='name'

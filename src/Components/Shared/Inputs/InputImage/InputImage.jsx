@@ -1,10 +1,15 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import userDefaults from '../../../../assets/images/userDefault.jpg';
 
 import './InputImage.css';
 
-export const InputImage = ({ text, type }) => {
+export const InputImage = ({ text, type, register, watch }) => {
 	const [imgPreview, setImgPreview] = useState(userDefaults);
+
+	useEffect(() => {
+		if (watch('image') && watch('image').length != 0)
+			setImgPreview(URL.createObjectURL(watch('image')[0]));
+	}, [watch('image')]);
 
 	return (
 		<div className='InputImage'>
@@ -21,9 +26,9 @@ export const InputImage = ({ text, type }) => {
 				<input
 					type='file'
 					accept='image/png, image/jpeg'
-					onChange={(e) =>
-						setImgPreview(URL.createObjectURL(e.target.files[0]))
-					}
+					{...register('image', {
+						required: true,
+					})}
 				/>
 				{text}
 			</label>

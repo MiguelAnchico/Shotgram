@@ -17,21 +17,22 @@ export const authSlice = createSlice({
 			state.idUser = action.payload.id;
 			state.user = action.payload.user;
 			state.type = action.payload.type;
-			state.settings = action.payload.settings;
+			//state.settings = action.payload.settings;
+			localStorage.setItem('token', action.payload.token);
 			state.logged = true;
 		},
 		registerAuth: (state, action) => {
 			state.idUser = action.payload.id;
 			state.user = action.payload.user;
 			state.type = action.payload.type;
-			state.settings = action.payload.settings;
+			//state.settings = action.payload.settings;
 			state.logged = true;
 		},
 		logoutAuth: (state) => {
 			state.idUser = '';
 			state.user = '';
 			state.type = '';
-			state.settings = '';
+			//state.settings = '';
 			state.logged = false;
 		},
 	},
